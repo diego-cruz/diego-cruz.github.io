@@ -9,6 +9,86 @@
 	  <link href="css/estilo_ultrafer.css" rel="stylesheet" />
     <link href="fontawesome/css/all.min.css" rel="stylesheet" />
     <link href="css/tooplate-chilling-cafe.css" rel="stylesheet"/>
+	  
+	  
+	  <script>
+
+		  
+		  function aumenta1() {
+		      document.getElementById("1").style.maxWidth = "30%";
+			  document.getElementById("2").style.maxWidth = "22%";
+			  document.getElementById("3").style.maxWidth = "22%";
+			  document.getElementById("4").style.maxWidth = "22%";
+			  document.getElementById("5").style.maxWidth = "22%";
+			  document.getElementById("6").style.maxWidth = "22%";
+			  document.getElementById("7").style.maxWidth = "22%";
+		  }
+		  
+		    function aumenta2() {
+		      document.getElementById("1").style.maxWidth = "22%";
+			  document.getElementById("2").style.maxWidth = "30%";
+			  document.getElementById("3").style.maxWidth = "22%";
+			  document.getElementById("4").style.maxWidth = "22%";
+			  document.getElementById("5").style.maxWidth = "22%";
+			  document.getElementById("6").style.maxWidth = "22%";
+			  document.getElementById("7").style.maxWidth = "22%";
+		  }
+		  
+		    function aumenta3() {
+		      document.getElementById("1").style.maxWidth = "22%";
+			  document.getElementById("2").style.maxWidth = "22%";
+			  document.getElementById("3").style.maxWidth = "30%";
+			  document.getElementById("4").style.maxWidth = "22%";
+			  document.getElementById("5").style.maxWidth = "22%";
+			  document.getElementById("6").style.maxWidth = "22%";
+			  document.getElementById("7").style.maxWidth = "22%";
+		  }
+		  
+		    function aumenta4() {
+		      document.getElementById("1").style.maxWidth = "22%";
+			  document.getElementById("2").style.maxWidth = "22%";
+			  document.getElementById("3").style.maxWidth = "22%";
+			  document.getElementById("4").style.maxWidth = "30%";
+			  document.getElementById("5").style.maxWidth = "22%";
+			  document.getElementById("6").style.maxWidth = "22%";
+			  document.getElementById("7").style.maxWidth = "22%";
+		  }
+		  
+		    function aumenta5() {
+		      document.getElementById("1").style.maxWidth = "22%";
+			  document.getElementById("2").style.maxWidth = "22%";
+			  document.getElementById("3").style.maxWidth = "22%";
+			  document.getElementById("4").style.maxWidth = "22%";
+			  document.getElementById("5").style.maxWidth = "30%";
+			  document.getElementById("6").style.maxWidth = "22%";
+			  document.getElementById("7").style.maxWidth = "22%";
+		  }
+		  
+		    function aumenta6() {
+		      document.getElementById("1").style.maxWidth = "22%";
+			  document.getElementById("2").style.maxWidth = "22%";
+			  document.getElementById("3").style.maxWidth = "22%";
+			  document.getElementById("4").style.maxWidth = "22%";
+			  document.getElementById("5").style.maxWidth = "22%";
+			  document.getElementById("6").style.maxWidth = "30%";
+			  document.getElementById("7").style.maxWidth = "22%";
+		  }
+		  
+		    function aumenta7() {
+		      document.getElementById("1").style.maxWidth = "22%";
+			  document.getElementById("2").style.maxWidth = "22%";
+			  document.getElementById("3").style.maxWidth = "22%";
+			  document.getElementById("4").style.maxWidth = "22%";
+			  document.getElementById("5").style.maxWidth = "22%";
+			  document.getElementById("6").style.maxWidth = "22%";
+			  document.getElementById("7").style.maxWidth = "30%";
+		  }
+</script>
+	  
+	  
+	  
+	  
+	  
 
 	<script>
 // Situação e peso
@@ -199,15 +279,15 @@ function sit5() {
           <h2 class="tm-section-header separator">pré termo</h2>
           <div class="tm-responsive-table">
 			  <div class="containercentro">
-           <button class="imgcontainer" id="1" value="1" onclick="sit1();">
+           <button class="imgcontainer" id="1" value="1" onclick="sit1(); aumenta1();">
 			  <img class="situacao"  src="img/pretermo1kg.png">
 			   <span class="situacaotext">até 1kg</span>
 			  </button>
-			  <button class="imgcontainer" id="2" value="2" onclick="sit2();" >
+			  <button class="imgcontainer" id="2" value="2" onclick="sit2(); aumenta2();" >
 			  <img class="situacao" src="img/pretermo15kg.png">
 			   <span class="situacaotext">1 a 1.5kg</span>
 			  </button>
-			  <button class="imgcontainer" id="3" value="3" onclick="sit3();">
+			  <button class="imgcontainer" id="3" value="3" onclick="sit3(); aumenta3();">
 			  <img class="situacao" src="img/pretermo2kg.png">
 			   <span class="situacaotext">1.5 a 2kg</span>
 			  </button>
@@ -221,19 +301,19 @@ function sit5() {
           <h2 class="tm-section-header separator">a termo</h2>
           <div class="tm-responsive-table">
 			  <div class="containercentro">
-          <button class="imgcontainer" id="4" value="4" onclick="sit4();">
+          <button class="imgcontainer" id="4" value="4" onclick="sit4(); aumenta4();">
 			  <img class="situacao" src="img/menor25kg.png">
 			  <span class="situacaotext">&lt;2.5kg</span>
 			  </button>
-			  <button class="imgcontainer" id="5" value="5" onclick="sit5();">
+			  <button class="imgcontainer" id="5" value="5" onclick="sit5(); aumenta5();">
 			  <img class="situacao" src="img/defferro.png">
 			  <span class="situacaotext">def. ferro</span>
 			  </button>
-			  <button class="imgcontainer" id="6" value="6" onclick="sit6();">
+			  <button class="imgcontainer" id="6" value="6" onclick="sit6(); aumenta6();">
 			  <img class="situacao" src="img/anemico.png">
 			  <span class="situacaotext">anêmico</span>
 			  </button>
-			  <button class="imgcontainer" id="7" value="7" onclick="sit7();">
+			  <button class="imgcontainer" id="7" value="7" onclick="sit7(); aumenta7();">
 			  <img class="situacao" src="img/saudavel.png">
 			  <span class="situacaotext">saudável</span>
 			  </button>
