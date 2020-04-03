@@ -8,6 +8,14 @@ body {
     font-weight: 400;
     margin: 0;
   }
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
   
   .tm-container {
     max-width: 640px;
