@@ -21,7 +21,7 @@
        </div>
 	  </nav>
     <div class="tm-container">
-      <div class="tm-main-content">
+      <div id="telaprincipal" class="tm-main-content">
        
 		  
 	 <!-- pré termo-->	  
@@ -30,15 +30,15 @@
           </h2>
           <div class="tm-responsive-table">
 			  <div class="containercentro">
-           <button class="imgcontainer" id="1" value="1" onclick="sit1();">
+           <button class="imgcontainer" id="1" value="1" onclick="sit1(); aumenta1();">
 			  <img class="situacao"  src="img/pretermo1kg.png">
 			   <span class="situacaotext">até 1kg</span>
 			  </button>
-			  <button class="imgcontainer" id="2" value="2" onclick="sit2();" >
+			  <button class="imgcontainer" id="2" value="2" onclick="sit2(); aumenta2();" >
 			  <img class="situacao" src="img/pretermo15kg.png">
 			   <span class="situacaotext">1 a 1.5kg</span>
 			  </button>
-			  <button class="imgcontainer" id="3" value="3" onclick="sit3();">
+			  <button class="imgcontainer" id="3" value="3" onclick="sit3(); aumenta3();">
 			  <img class="situacao" src="img/pretermo2kg.png">
 			   <span class="situacaotext">1.5 a 2.5kg</span>
 			  </button>
@@ -90,17 +90,62 @@
 
           </div>
 			
-			<button onclick="changeTheVariable(); calcular();" type="button" class="pushMe"><img id="cal" src="img/calcular.png"></button>
+			<button onclick="changeTheVariable(); calcular(); telaposo();" type="button" class="pushMe"><img id="cal" src="img/calcular.png"></button>
         </section>
 
       </div>
+
+      <!--Posologia-->
+
+      <div id="posologia" class="tm-main-content">
+	  
+       <section class="tm-section">
+        <h2 class="tm-section-header separator">Posologia</h2>
+        <div class="tm-responsive-table" id="posogotas1">
+    <p class="resultadoposo" >
+      <img class="posoicon" src="img/gota.png">
+      <span id="posogotas">0 gotas</span>
+    </p>
+  </div>
+    <div class="tm-responsive-table" >
+    <p class="resultadoposo" id="posodias1">
+      <img class="posoicon" src="img/dia.png" style="
+      left: 0px;
+      bottom: 5px;
+  ">
+      <span id="posodias">1x ao dia</span>
+    </p>
+
+    <p class="resultadoposo1" id="posotexto1">
+
+      <span id="posotexto">aviso</span>
+    </p>
+        </div>
+    
+    <button onclick="voltarcalc();" type="button" class="pushMe"><img id="calc2" src="img/calcular_novamente.png"></button>
+      </section>
+
+    </div>
+
+
+        </div>
+
+      <!--Fim Posologia-->
+
+       <!--Bula-->
+
+       <div id="bula" class="tm-main-content">
+      </div>div>
+      
+    <!--Fim Bula-->
+
      <!-- footer>
         <p class="tm-text-white tm-footer-text">
         </p>
       </footer -->
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/calculadora.js"></script>
+    <script src="js/Calculadora.js"></script>
  
     <script>
       $(function() {

@@ -8,14 +8,6 @@ body {
     font-weight: 400;
     margin: 0;
   }
-
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
   
   .tm-container {
     max-width: 640px;
@@ -24,7 +16,99 @@ a {
   }
   
   .tm-main-content { background-color: #ffffff; }
+
+#telaprincipal {
+display: block;
+
+}
+  #bula {
+    display: none; 
+  }
+
+  #posologia {
+    display: none; 
+  }
   
+.resultadoposo {
+
+  width: 230px;
+  height: 60px;
+  font-weight: 100;
+  font-size: 40px;
+  background-color: #eee;
+  border-radius: 40px;
+  border: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resultadoposo1 {
+
+  font-weight: 100;
+  font-size: 40px;
+  background-color: #eee;
+  border-radius: 40px;
+  border: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+.posoicon {
+  max-width: 24px !important;
+  min-width: 20px !important;
+  position: relative;
+  right: 25px;
+}
+
+#posogotas{
+  color: #494949;
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: -webkit-baseline-middle;
+  margin: 0 auto;
+  vertical-align: super;
+}
+
+#posodias{
+  color: #494949;
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: -webkit-baseline-middle;
+  margin: 0 auto;
+  vertical-align: super;
+}
+
+#posotexto{
+
+  color: #494949;
+
+  font-size: 20px;
+  
+  font-weight: 700;
+  
+  margin: 0 auto;
+  
+  padding-bottom: 12px;
+}
+
+#posotexto1{
+  display: none;
+  max-width: 60%;
+  min-width: 50%;
+  line-height: 20px;
+  margin-bottom: 50px;
+  padding: 40px;
+  
+}
+
+
+img#calc2 {
+  max-width: 80%;
+}
+
   #tm-intro-img {
     background-image: url(../img/chilling-cafe-01.jpg);
     background-position: center;
