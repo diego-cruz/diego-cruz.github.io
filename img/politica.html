@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora Ultrafer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+	  <link href="css/estilo_ultrafer.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+
+   
+	  
+	  
+  </head>
+  <body>
+	   <!-- nav -->
+	  <nav>
+          <div id="logocontainer">
+      <a href="index.html"> <img id="logo" src="img/logo.png"/> </a>
+       </div>
+	  </nav>
+    <div class="tm-container">
+      <div id="telaprincipal" class="tm-main-content">
+       
+		  
+	 <!-- Termos de uso-->	  
+        <section class="tm-section">
+          <h2 class="tm-section-header separator">Política de privacidade
+          </h2>
+          <div class="tm-responsive-table">
+			  <div class="containercentro2">
+          <div>
+            <p>A FQM preserva a privacidade de seus consumidores e clientes e garante o sigilo das informações recebidas por meio do nosso SAC.</p>
+            <p><b>Informações</b></p>
+            <p>Todas as informações fornecidas pelos consumidores são protegidas, podendo estes dados serem compartilhados com terceiros prestadores de serviços com a finalidade exclusiva de solucionar a ocorrência do cliente. As informações também poderão ser utilizadas em relatórios de áreas internas e da área jurídica da companhia, mantendo-se preservada a privacidade dos dados pessoais do consumidor.</p>
+            <p><b>Coleta de dados</b></p>
+            <p> O Serviço de Atendimento ao Cliente da FQM solicita informações quando o consumidor efetua contato com a Central de Atendimento (via telefone, e-mail, site, carta, redes sociais) para esclarecimento de dúvidas, reclamações, sugestões, elogios e solicitações sobre os produtos e a empresa. Será preservado o direito ao anonimato do consumidor que opte por não se identificar. Caso o consumidor se identifique, mas queira manter seu nome em sigilo, este direito será garantido durante e após as tratativas de uma reclamação.</p>
+            <p><b>Armazenamento de informações</b></p>
+            <p>As informações fornecidas pelo cliente serão mantidas em sigilo em banco de dados eletrônico que garante sua segurança por meio de um rígido controle em servidores com acesso físico e lógico limitado, sem conexão com o ambiente externo (Internet) e que não permite exclusão dos registros, mas possibilita sua inativação.</p>
+            <p>Todas as ligações atendidas pela nossa Central de Atendimento são gravadas e o número do telefone é identificado. O consumidor é informado pela mensagem eletrônica no início do seu contato.</p>
+        </div>
+   
+				  </div>
+        </div>
+        </section>
+
+		 
+      
+			  </div>
+          </div>
+        </section>
+
+        
+    <!-- Site footer -->
+
+
+    
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <div style="
+    display: inline-block;
+"><img src="img/logo-menu.png"></div>
+
+    <p class="footer-links">
+    Atenção: diversos assuntos abordados em nosso site destinam-se a profissionais médicos e da área de saúde. No caso de quaisquer dúvidas, entre em contato conosco pelo telefone <b>0800 025 0110</b> ou através deste e-mail: <b>sac@fqm.com.br</b>
+    </p>
+
+    <p class="footer-links">
+      <a href="termos.html"><b>Termos de Uso</b></a>
+      <a href="politica.html"><b>Política</b></a> 
+    </p>
+
+    <p class="footer-company-name">© Copyright 2020 Farmoquímica S.A - Todos os direitos reservados</p>
+  </div>
+
+
+  </div>
+
+</footer>
+
+<!-- fim Site footer -->
+
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/calculadora.js"></script>
+ 
+    <script>
+      $(function() {
+        
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+         
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+<script>
+
+     //animação click
+		  
+     $(document).ready(function(){
+    
+    $('.situacao').click(function(){
+    if($('.myClickState').length){
+   $('.myClickState').not($(this)).removeClass('myClickState').addClass('situacao');
+   }      
+   $(this).removeClass('situacao').addClass('myClickState');     
+   }); 
+        
+   });
+</script>
+
+	  
+  </body>
+</html>

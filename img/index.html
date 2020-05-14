@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora Ultrafer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+	  <link href="css/estilo_ultrafer.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+
+   
+	  
+	  
+  </head>
+  <body>
+	   <!-- nav -->
+	  <nav>
+          <div id="logocontainer">
+       <img id="logo" src="img/logo.png"/>
+       </div>
+	  </nav>
+    <div class="tm-container">
+      <div id="telaprincipal" class="tm-main-content">
+       
+		  
+	 <!-- pré termo-->	  
+        <section class="tm-section">
+          <h2 class="tm-section-header separator">pré termo até 1 ano
+          </h2>
+          <div class="tm-responsive-table">
+			  <div class="containercentro">
+           <button class="imgcontainer" id="1" value="1" onclick="sit1(); aumenta1();">
+			  <img class="situacao"  src="img/pretermo1kg.png">
+			   <span class="situacaotext">até 1kg</span>
+			  </button>
+			  <button class="imgcontainer" id="2" value="2" onclick="sit2(); aumenta2();" >
+			  <img class="situacao" src="img/pretermo15kg.png">
+			   <span class="situacaotext">1 a 1.5kg</span>
+			  </button>
+			  <button class="imgcontainer" id="3" value="3" onclick="sit3(); aumenta3();">
+			  <img class="situacao" src="img/pretermo2kg.png">
+			   <span class="situacaotext">1.5 a 2.5kg</span>
+			  </button>
+				  </div>
+        </div>
+        </section>
+
+		 
+		<!-- a termo-->	  
+        <section class="tm-section">
+          <h2 class="tm-section-header separator">a termo</h2>
+          <div class="tm-responsive-table">
+			  <div class="containercentro">
+          <button class="imgcontainer" id="4" value="4" onclick="sit4();">
+			  <img class="situacao" src="img/menor25kg.png">
+			  <span class="situacaotext">&lt;2.5kg <br>até 1 ano</span>
+			  </button>
+			  <button class="imgcontainer" id="5" value="5" onclick="sit5();">
+			  <img class="situacao" src="img/saudavel.png">
+			  <span class="situacaotext">>2,5kg <br>até 2 anos</span>
+			  </button>
+			  </div>
+          </div>
+        </section>
+
+        	<!-- Crianças-->	  
+             <section class="tm-section">
+               <h2 class="tm-section-header separator">crianças</h2>
+               <div class="tm-responsive-table">
+                      <div class="containercentro">
+                      <button class="imgcontainer" id="6" value="6" onclick="sit6();">
+                      <img class="situacao" src="img/defferro.png">
+                      <span class="situacaotext">def. ferro</span>
+                      </button>
+                      <button class="imgcontainer" id="7" value="7" onclick="sit7();">
+                      <img class="situacao" src="img/anemico.png">
+                      <span class="situacaotext">anêmico</span>
+                      </button>
+                      </div>
+               </div>
+             </section>
+		  
+		  
+		<!-- peso-->	  
+        <section class="tm-section">
+          <h2 class="tm-section-header separator">digite o peso atual kg</h2>
+          <div class="tm-responsive-table">
+			<input type="number" id="inputField" ClientIDMode="static">
+
+          </div>
+			
+			<button onclick="changeTheVariable(); calcular(); telaposo();" type="button" class="pushMe"><a href="#logocontainer"><img id="cal" src="img/calcular.png"></a></button>
+        </section>
+
+      </div>
+
+      <!--Posologia-->
+
+      <div id="posologia" class="tm-main-content">
+	  
+       <section class="tm-section">
+        <h2 class="tm-section-header separator">Posologia</h2>
+        <div class="tm-responsive-table" id="posogotas1">
+    <p class="resultadoposo" >
+      <img class="posoicon" src="img/gota.png">
+      <span id="posogotas">0 gotas</span>
+    </p>
+  </div>
+    <div class="tm-responsive-table" id="diaspadding">
+    <p class="resultadoposo" id="posodias1">
+      <img class="posoicon" src="img/dia.png" style="
+      left: 0px;
+      bottom: 5px;
+  ">
+      <span id="posodias">1x ao dia</span>
+    </p>
+
+    <p class="resultadoposo1" id="posotexto1">
+
+      <span id="posotexto">aviso</span>
+    </p>
+        </div>
+    
+    <button onclick="voltarcalc();" type="button" class="pushMe"><img id="calc2" src="img/calcular_novamente.png"></button>
+    <div id="bula_container"><a href="http://www.fqmgrupo.com.br/fqmfarma/uploads/attachment/18997869185e4be366dad8b.pdf" target="_blank"><img src="img/bula.png"></a></div> 
+    <div id="logofqm_container"><img id="logofqm" src="img/logo_FQM.png"></div>
+      </section>
+
+    </div>
+
+
+        </div>
+
+      <!--Fim Posologia-->
+
+       <!--Bula-->
+      
+    <!--Fim Bula-->
+
+    <!-- Site footer -->
+
+
+    
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <div style="
+    display: inline-block;
+"><img src="img/logo-menu.png"></div>
+
+    <p class="footer-links">
+    Atenção: diversos assuntos abordados em nosso site destinam-se a profissionais médicos e da área de saúde. No caso de quaisquer dúvidas, entre em contato conosco pelo telefone <b>0800 025 0110</b> ou através deste e-mail: <b>sac@fqm.com.br</b>
+    </p>
+
+    <p class="footer-links">
+      <a href="termos.html"><b>Termos de Uso</b></a>
+      <a href="politica.html"><b>Política</b></a> 
+    </p>
+
+    <p class="footer-company-name">© Copyright 2020 Farmoquímica S.A - Todos os direitos reservados</p>
+  </div>
+
+
+  </div>
+
+</footer>
+
+<!-- fim Site footer -->
+
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/calculadora.js"></script>
+ 
+    <script>
+      $(function() {
+        
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+         
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+<script>
+
+     //animação click
+		  
+     $(document).ready(function(){
+    
+    $('.situacao').click(function(){
+    if($('.myClickState').length){
+   $('.myClickState').not($(this)).removeClass('myClickState').addClass('situacao');
+   }      
+   $(this).removeClass('situacao').addClass('myClickState');     
+   }); 
+        
+   });
+</script>
+
+	  
+  </body>
+</html>
