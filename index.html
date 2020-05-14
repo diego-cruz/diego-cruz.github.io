@@ -90,7 +90,7 @@
 
           </div>
 			
-			<button onclick="changeTheVariable(); calcular(); telaposo();" type="button" class="pushMe"><img id="cal" src="img/calcular.png"></button>
+			<button onclick="changeTheVariable(); calcular(); telaposo();" type="button" class="pushMe"><a href="#logocontainer"><img id="cal" src="img/calcular.png"></a></button>
         </section>
 
       </div>
@@ -107,7 +107,7 @@
       <span id="posogotas">0 gotas</span>
     </p>
   </div>
-    <div class="tm-responsive-table" >
+    <div class="tm-responsive-table" id="diaspadding">
     <p class="resultadoposo" id="posodias1">
       <img class="posoicon" src="img/dia.png" style="
       left: 0px;
@@ -123,6 +123,8 @@
         </div>
     
     <button onclick="voltarcalc();" type="button" class="pushMe"><img id="calc2" src="img/calcular_novamente.png"></button>
+    <div id="bula_container"><a href="http://www.fqmgrupo.com.br/fqmfarma/uploads/attachment/18997869185e4be366dad8b.pdf" target="_blank"><img src="img/bula.png"></a></div> 
+    <div id="logofqm_container"><img id="logofqm" src="img/logo_FQM.png"></div>
       </section>
 
     </div>
@@ -133,16 +135,40 @@
       <!--Fim Posologia-->
 
        <!--Bula-->
-
-       <div id="bula" class="tm-main-content">
-      </div>
       
     <!--Fim Bula-->
 
-     <!-- footer>
-        <p class="tm-text-white tm-footer-text">
-        </p>
-      </footer -->
+    <!-- Site footer -->
+
+
+    
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <div style="
+    display: inline-block;
+"><img src="img/logo-menu.png"></div>
+
+    <p class="footer-links">
+    Atenção: diversos assuntos abordados em nosso site destinam-se a profissionais médicos e da área de saúde. No caso de quaisquer dúvidas, entre em contato conosco pelo telefone <b>0800 025 0110</b> ou através deste e-mail: <b>sac@fqm.com.br</b>
+    </p>
+
+    <p class="footer-links">
+      <a href="termos.html"><b>Termos de Uso</b></a>
+      <a href="politica.html"><b>Política</b></a> 
+    </p>
+
+    <p class="footer-company-name">© Copyright 2020 Farmoquímica S.A - Todos os direitos reservados</p>
+  </div>
+
+
+  </div>
+
+</footer>
+
+<!-- fim Site footer -->
+
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/calculadora.js"></script>
@@ -180,6 +206,7 @@
         
    });
 </script>
+
 	  
   </body>
 </html>
