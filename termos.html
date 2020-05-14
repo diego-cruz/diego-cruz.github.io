@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora Ultrafer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+	  <link href="css/estilo_ultrafer.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+
+   
+	  
+	  
+  </head>
+  <body>
+	   <!-- nav -->
+	  <nav>
+          <div id="logocontainer">
+      <a href="index.html"> <img id="logo" src="img/logo.png"/> </a>
+       </div>
+	  </nav>
+    <div class="tm-container">
+      <div id="telaprincipal" class="tm-main-content">
+       
+		  
+	 <!-- Termos de uso-->	  
+        <section class="tm-section">
+          <h2 class="tm-section-header separator">Termos de uso
+          </h2>
+          <div class="tm-responsive-table">
+			  <div class="containercentro2">
+          <div>
+         
+            <p><b>Informação médica</b></p>
+            <p>Este site possui informações sobre condições médicas e seus tratamentos. A FQM não garante que estes dados são apropriados ou estão disponíveis em territórios diferentes daquele onde este site está hospedado. Aqueles que optarem por acessar este site de outras regiões, o fazem por iniciativa própria e são responsáveis pelo cumprimento das leis locais. Além disso, nenhuma informação deste site deve ser interpretada como aconselhamento médico, não devendo ser incorporada como base para qualquer decisão ou ação. Informações médicas devem sempre ser obtidas em consultas com médicos qualificados.</p>
+            <p>O FQM GRUPO está constantemente atualizando este espaço mas ressaltamos que algumas informações podem tornar-se desatualizadas ao longo do tempo. Exceto quando expressamente declarado, A FQM não garante que qualquer dado deste site está completamente atualizado.</p>
+            <p><b>Links para outros sites</b></p>
+            <p>Esse site pode direcioná-lo a outros portais na internet, incluindo sites de outras Divisões de Negócio do FQM GRUPO. Sempre leia as políticas de privacidade de qualquer outro site da FQM ou de terceiros que você acessar. A FQM não é responsável, não recomenda e não se responsabiliza por qualquer informação ou opinião contida em outros sites.</p>
+            <p><b>Propriedade Intelectual</b></p>
+            <p>Todos os direitos de propriedade intelectual sobre o material deste site são da FQM ou foi concedida uma permissão de uso, exceto onde indicado o contrário. A reprodução de parte ou da totalidade do conteúdo deste espaço sob qualquer forma é proibida, exceto em conformidade com as seguintes orientações: você pode ler, ver, imprimir, baixar ou copiar o material deste site para seu uso pessoal, mas não comercial. A menos que esteja indicado o contrário, nenhum outro uso é permitido.</p>
+            <p>Nenhuma informação deste site deve ser interpretada como concessão de qualquer licença ou direito de qualquer propriedade intelectual (incluindo patentes, marcas e direitos autorais) da FQM ou de terceiros.</p>
+            <p>A FQM não reivindica nenhuma propriedade ou qualquer relação com marcas registradas de terceiros que possam vir a surgir nesta página. Tais marcas registradas de terceiros são usadas somente para identificar produtos e serviços de seus respectivos proprietários e nenhum patrocínio ou apoio por parte da GSK deve ser inferido a partir da utilização dessas marcas.</p>
+            <p><b>Uso de informações</b></p>
+            <p>Informações de usuários enviadas através da internet, postadas em um site da FQM ou coletadas de outra forma (exceto dados que contenham informações pessoais e/ou relacionados com a saúde do indivíduo, se inserindo assim em nossa Política de Privacidade) são considerados não-confidenciais e sem proprietários, não tendo a FQM nenhuma obrigação de qualquer tipo com relação a tais dados. A FQM tem a liberdade de usar estas informações para qualquer finalidade que considere adequadas, incluindo sua reprodução e publicação, podendo usá-las para qualquer propósito, incluindo fins comerciais, sem a necessidade de pagamento para quem as produziu.</p>
+            <p><b>Privacidade</b></p>
+            <p>A FQM respeita a privacidade dos visitantes deste site. Por favor, consulte nossa Política de Privacidade para receber mais detalhes sobre seus direitos e responsabilidades.</p>
+        </div>
+   
+				  </div>
+        </div>
+        </section>
+
+		 
+      
+			  </div>
+          </div>
+        </section>
+
+        
+    <!-- Site footer -->
+
+
+    
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <div style="
+    display: inline-block;
+"><img src="img/logo-menu.png"></div>
+
+    <p class="footer-links">
+    Atenção: diversos assuntos abordados em nosso site destinam-se a profissionais médicos e da área de saúde. No caso de quaisquer dúvidas, entre em contato conosco pelo telefone <b>0800 025 0110</b> ou através deste e-mail: <b>sac@fqm.com.br</b>
+    </p>
+
+    <p class="footer-links">
+      <a href="termos.html"><b>Termos de Uso</b></a>
+      <a href="politica.html"><b>Política</b></a> 
+    </p>
+
+    <p class="footer-company-name">© Copyright 2020 Farmoquímica S.A - Todos os direitos reservados</p>
+  </div>
+
+
+  </div>
+
+</footer>
+
+<!-- fim Site footer -->
+
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/calculadora.js"></script>
+ 
+    <script>
+      $(function() {
+        
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+         
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+<script>
+
+     //animação click
+		  
+     $(document).ready(function(){
+    
+    $('.situacao').click(function(){
+    if($('.myClickState').length){
+   $('.myClickState').not($(this)).removeClass('myClickState').addClass('situacao');
+   }      
+   $(this).removeClass('situacao').addClass('myClickState');     
+   }); 
+        
+   });
+</script>
+
+	  
+  </body>
+</html>
