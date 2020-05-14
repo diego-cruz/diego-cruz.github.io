@@ -19,19 +19,11 @@ function telaposo() {
     function voltarcalc() {
     document.getElementById("telaprincipal").style.display = "block";
     document.getElementById("posologia").style.display = "none"; 
-    document.getElementById("bula").style.display = "none";
     document.getElementById("posogotas1").style.display = "block";   
     document.getElementById("posodias1").style.display = "block";     
     document.getElementById("posotexto1").style.display = "none";   
     }
     
-    //tela bula
-    function telabula() {
-        document.getElementById("telaprincipal").style.display = "none";
-        document.getElementById("posologia").style.display = "none"; 
-        document.getElementById("bula").style.display = "block";    
-    }
-
 // Situação e peso
 var kg 
 var situacao
